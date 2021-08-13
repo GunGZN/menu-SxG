@@ -1,16 +1,10 @@
 #!/bin/bash
-#====================================================
-#	SCRIPT: CRIARUSUARIO SSHPLUS MANAGER
-#	DESENVOLVIDO POR:	CRAZY_VPN
-#	CONTATO TELEGRAM:	http://t.me/crazy_vpn
-#	CANAL TELEGRAM:	http://t.me/sshplus
-#====================================================
+
 echo ""
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[0;32m-        TRANSLATE BY PHC_MARED0 PHC_Jayvee      -\033[0m"
-echo -e "\033[0;32m-              REQUESTED BY CUPCAKE_13           -\033[0m"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo ""
+
+echo -e "\033[0;32m█▀▀ █░█ █▄░█ ▄▄ ▀▄▀
+echo -e "\033[0;34m█▄█ █▄█ █░▀█ ░░ █░█
+echo -e "\033[0;32m╰━SCRIPT BY GUN-X
 IP=$(cat /etc/IP)
 cor1='\033[41;1;37m'
 cor2='\033[44;1;37m'
