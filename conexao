@@ -6,10 +6,15 @@
 #	CANAL TELEGRAM:	http://t.me/sshplus
 #====================================================
 echo ""
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[0;32m-        TRANSLATE BY PHC_MARED0 PHC_Jayvee      -\033[0m"
-echo -e "\033[0;32m-              REQUESTED BY CUPCAKE_13           -\033[0m"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[0;31m╭━━━━━━━━━━━━━━━━━━━━━━━╮"
+echo -e "\033[0;32m┃━╭━━━┳╮━╭┳━╮━╭╮━╭━╮╭━╮━┃"
+echo -e "\033[0;33m┃╱┃╭━╮┃┃╱┃┃╱╰╮┃┃╱╰╮╰╯╭╯╱┃"
+echo -e "\033[0;34m┃━┃┃━╰┫┃━┃┃╭╮╰╯┃━━╰╮╭╯━━┃"
+echo -e "\033[0;35m┃╱┃┃╭━┫┃╱┃┃┃╰╮┃┣━━┳╯╰╮╱╱┃"
+echo -e "\033[0;36m┃━┃╰┻━┃╰━╯┃┃━┃┃┣╱┳╯╭╮╰╮━┃"
+echo -e "\033[0;37m┃╱╰━━━┻━━━┻╯╱╰━╯╱╰━╯╰━╯╱┃"
+echo -e "\033[0;35m┣━━━━━━━━━━━━━━━━━━━━━━━╯"
+echo -e "\033[0;37m╰━━Script BY GUN-X"
 echo ""
 [[ $(awk -F" " '{print $2}' /usr/lib/licence) == "@CRAZY_VPN" ]] && {
 	ram1=$(free -h | grep -i mem | awk {'print $2'})
@@ -28,7 +33,7 @@ echo ""
 			touch $HOME/fim
 		) >/dev/null 2>&1 &
 		tput civis
-		echo -ne "\033[1;33mWAIT \033[1;37m- \033[1;33m["
+		echo -ne "\033[1;33mรอ... \033[1;37m- \033[1;33m["
 		while true; do
 			for ((i = 0; i < 18; i++)); do
 				echo -ne "\033[1;31m#"
@@ -39,7 +44,7 @@ echo ""
 			sleep 1s
 			tput cuu1
 			tput dl1
-			echo -ne "\033[1;33mWAIT \033[1;37m- \033[1;33m["
+			echo -ne "\033[1;33mรอ... \033[1;37m- \033[1;33m["
 		done
 		echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 		tput cnorm
@@ -60,7 +65,7 @@ echo ""
 
 	inst_sqd() {
 		if netstat -nltp | grep 'squid' 1>/dev/null 2>/dev/null; then
-			echo -e "\E[41;1;37m            REMOVER SQUID PROXY              \E[0m"
+			echo -e "\E[41;1;37m            ลบพร็อกซี่              \E[0m"
 			echo ""
 			echo -ne "\033[1;32mREALLY WISH TO REMOVE SQUID \033[1;31m? \033[1;33m[y/n]:\033[1;37m "
 			read resp
@@ -653,16 +658,26 @@ echo ""
 				else
 					mult=$(echo -e "\033[1;31m○ ")
 				fi
-				echo -e "\E[44;1;37m          MANAGE OPENVPN           \E[0m"
+                                echo -e "\033[0;31m╭━━━━━━━━━━━━━━━━━━━━━━━╮"
+                                echo -e "\033[0;32m┃━╭━━━┳╮━╭┳━╮━╭╮━╭━╮╭━╮━┃"
+                                echo -e "\033[0;33m┃╱┃╭━╮┃┃╱┃┃╱╰╮┃┃╱╰╮╰╯╭╯╱┃"
+                                echo -e "\033[0;34m┃━┃┃━╰┫┃━┃┃╭╮╰╯┃━━╰╮╭╯━━┃"
+                                echo -e "\033[0;35m┃╱┃┃╭━┫┃╱┃┃┃╰╮┃┣━━┳╯╰╮╱╱┃"
+                                echo -e "\033[0;36m┃━┃╰┻━┃╰━╯┃┃━┃┃┣╱┳╯╭╮╰╮━┃"
+                                echo -e "\033[0;37m┃╱╰━━━┻━━━┻╯╱╰━╯╱╰━╯╰━╯╱┃"
+                                echo -e "\033[0;35m┣━━━━━━━━━━━━━━━━━━━━━━━╯"
+                                echo -e "\033[0;37m╰━━Script BY GUN-X"
+                                echo ""
+				echo -e "\E[44;1;37m          ตั้งค่าระบบ OPENVPN           \E[0m"
 				echo ""
 				echo -e "\033[1;33mPORTA\033[1;37m: \033[1;32m$opnp"
 				echo ""
-				echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;37m• \033[1;33mCHANGE PORT"
-				echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;37m• \033[1;33mREMOVE OPENVPN"
-				echo -e "\033[1;31m[\033[1;36m3\033[1;31m] \033[1;37m• \033[1;33mOVPN VIA LINK $ovpnweb"
-				echo -e "\033[1;31m[\033[1;36m4\033[1;31m] \033[1;37m• \033[1;33mMULTILOGIN OVPN $mult"
-				echo -e "\033[1;31m[\033[1;36m5\033[1;31m] \033[1;37m• \033[1;33mCHANGE DNS HOST"
-				echo -e "\033[1;31m[\033[1;36m0\033[1;31m] \033[1;37m• \033[1;33mCOME BACK"
+				echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;37m• \033[1;31mเปลี่ยนพอร์ต"
+				echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;37m• \033[1;32mลบ OPENVPN"
+				echo -e "\033[1;31m[\033[1;36m3\033[1;31m] \033[1;37m• \033[1;33mเปิดการสร้างลิ้งovpn $ovpnweb"
+				echo -e "\033[1;31m[\033[1;36m4\033[1;31m] \033[1;37m• \033[1;34mหลายคนหนึ่งบัญชี้ $mult"
+				echo -e "\033[1;31m[\033[1;36m5\033[1;31m] \033[1;37m• \033[1;35mเปลี่ยนhost DNS"
+				echo -e "\033[1;31m[\033[1;36m0\033[1;31m] \033[1;37m• \033[1;36mย้อนกลับ"
 				echo ""
 				echo -ne "\033[1;32mWHAT DO YOU WANT TO DO \033[1;33m?\033[1;31m?\033[1;37m "
 				read option
@@ -1210,14 +1225,14 @@ exit 0' >$RCLOCAL
 				IP="$IP2"
 			fi
 			cat <<-EOF >/etc/openvpn/client-common.txt
-				# OVPN_ACCESS_SERVER_PROFILE=[SSHPLUS]
+				# OVPN_ACCESS_SERVER_PROFILE=[Gun-X]
 				client
 				dev tun
 				proto $PROTOCOL
 				sndbuf 0
 				rcvbuf 0
-				remote /SSHPLUS? $porta
-				#payload "HTTP/1.0 [crlf]Host: m.youtube.com[crlf]CONNECT HTTP/1.0[crlf][crlf]|[crlf]"
+				remote $IP $porta
+				http-proxy-option CUSTOM-HEADER "Host: www.opensignal.com"
 				http-proxy $IP 8080
 				resolv-retry 5
 				nobind
